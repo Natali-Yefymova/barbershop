@@ -1,0 +1,12 @@
+:root{
+    --accent-color: #FF6C00;
+    --light-bgd: #FFFFFF;
+    --dark-bgd: #303030;
+    --text-accent: #9DA4BD;
+    --text-color: #555555;
+}
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+/* 
+font-family: 'Raleway', sans-serif; */
