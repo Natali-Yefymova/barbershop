@@ -7,6 +7,27 @@
 }
 body{
   font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.67;
+}
+h1, h2, h3, h4, p{
+    margin: 0;
+}
+.list {
+    list-style: none;
+}
+.link{
+    font-style: normal;
+    text-decoration: none;
+}
+ul, ol {
+    margin: 0;
+    padding: 0;
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 /* 
 font-family: 'Raleway', sans-serif; */
