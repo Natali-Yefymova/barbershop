@@ -33,7 +33,7 @@ img{
     height: auto;
 }
 section{
-    padding:130px 55px;
+    padding:130px 0;
     outline: 1px solid red;
 }
 .container {
