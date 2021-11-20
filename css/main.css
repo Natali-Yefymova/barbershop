@@ -34,10 +34,14 @@ img{
 }
 section{
     padding:130px 55px;
-    border: 1px solid red;
+    outline: 1px solid red;
 }
 .container {
-    width: 1185px;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .btn-appointment {
     font-weight: 600;
@@ -46,12 +50,13 @@ section{
     /* letter-spacing: 0.09em; */
     text-transform: uppercase;
     padding: 12px 20px;
-    width: 160px;
+    min-width: 160px;
     border: 1px solid var(--accent-color);
     box-sizing: border-box;
     border-radius: 25px;
     background-color: transparent;
     display: inline-block;
+    text-align: center;
 }
 .btn-appointment:hover,
 .btn-appointment:focus {
