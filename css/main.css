@@ -4,6 +4,8 @@
     --dark-bgd: #303030;
     --text-accent: #9DA4BD;
     --text-color: #555555;
+    --grey-bgd: #F7F7F7;
+    --footer-bgd:#191C26;
 }
 body{
   font-family: 'Open Sans', sans-serif;
@@ -69,9 +71,14 @@ section{
     font-weight: 700;
     letter-spacing: 0.05em;
     font-size: 42px;
+    line-height: 1.16;
+    color: var(--dark-bgd);
 
 }
-
+.title-light {
+    margin-top: 20px;
+    margin-bottom: 44px;
+}
 /* header */
 
 .header>.container {
@@ -136,7 +143,7 @@ line-height: 1.18;
 letter-spacing: 0.05em;
 margin-top: 20px;
 }
-.subtitle {
+.subtitle-dark {
     font-weight: 600;
 font-size: 11px;
 line-height: 1.4;
@@ -145,7 +152,14 @@ text-transform: uppercase;
 
 color: rgba(157, 164, 189, 0.6);
 }
-
+.subtitle-light {
+    color: var(--dark-bgd);
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
 .hero-text {
     font-size: 18px;
     letter-spacing: 0.02em;
@@ -153,6 +167,7 @@ color: rgba(157, 164, 189, 0.6);
     margin-top: 20px;
 }
 /* about */
+
 .container-about {
     display: flex;
 }
@@ -163,9 +178,11 @@ color: rgba(157, 164, 189, 0.6);
 .about-images {
   height: 445px;
   max-width: 270px;
-  
-}
 
+}
+.about-img:not(:last-child){
+     margin-right: 30px;
+}
 .about-wrapper {
     margin-left: 64px;
 }
@@ -181,7 +198,57 @@ color: rgba(157, 164, 189, 0.6);
     margin-top: 20px;
     margin-bottom: 44px;
 }
+
+/* Price */
+.price-list_item{
+    letter-spacing: 0.02em;
+    color: var(--text-accent);
+}
+.price-container .btn-appointment{
+    display: inline-block;
+    margin-top: 50px;
+    margin-left: auto;
+}
+/* Experience */
+.experience-container {
+display: flex;
+flex-flow: row-reverse;
+}
+.experience-list{
+    margin-right: 130px;
+}
+.experience-list_item {
+    background-color: var(--grey-bgd);
+    font-weight: 600;
+font-size: 11px;
+line-height: 1.36;
+text-align: center;
+margin-bottom: 30px;
+}
+.experience-text {
+    font-size: 18px;
+}
+/* Masters */
+.section-masters{
+    background-color: var(--grey-bgd);
+}
+.masters-list {
+    display: flex;
+}
+/* Galery */
+.galery-list {
+    display: flex;
+    margin-top: 44px;
+}
+.galery-list_item{
+    max-width: 270px;
+    height: 360px;
+    }
+    .galery-list_item:not(:last-child){
+        margin-right: 30px;
+    }
 /* FOOTER */
 .footer {
     padding: 130px 55px;
+    background-color: var(--footer-bgd);
 }

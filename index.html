@@ -58,7 +58,7 @@
       <!-- Hero  -->
       <section class="section-hero">
         <div class="container">
-          <p class="subtitle">A hair salon for men in Kyiv</p>
+          <p class="subtitle-dark">A hair salon for men in Kyiv</p>
           <h1 lang="en" class="hero-title">Barbershop</h1>
           <p class="hero-text">
             Мы эксперты в модных мужских стрижках. <br />
@@ -73,17 +73,17 @@
             </aside> -->
       </section>
       <!-- About -->
-      <section>
+      <section class="section-about">
         <div class="container container-about">
           <ul class="list about-image">
-            <li>
+            <li class="about-img">
               <img
                 src="./images/about/img 1@1x.jpg"
                 alt="стрижка бороды"
                 class="about-images"
               />
             </li>
-            <li>
+            <li class="about-img">
               <img
                 src="./images/about/img 2@1x.jpg"
                 alt="мастер бреет клиента"
@@ -93,7 +93,7 @@
             </li>
           </ul>
           <div class="about-wrapper">
-            <h2 class="subtitle">О нас</h2>
+            <h2 class="subtitle-light">О нас</h2>
             <p class="title title-about">Лучший Барбершоп твоего города</p>
             <p class="text-about">
               <span class="text-accent"
@@ -112,47 +112,62 @@
       </section>
       <!-- Price -->
       <section>
-        <div class="container">
-          <p>Проведи время в компании лучших мастеров</p>
-          <h2>Услуги и цены</h2>
+        <div class="container price-container">
+          <p class="subtitle-dark">Проведи время в компании лучших мастеров</p>
+          <h2 class="title title-light">Услуги и цены</h2>
           <ul class="list">
-            <li>Мужская стрижка от 300 грн.</li>
-            <li>Стрижка бороды от 200 грн.</li>
-            <li>Стрижка усов от 200 грн.</li>
-            <li>Бритье опасной бритвой от 200 грн.</li>
-            <li>Cтрижка у стажера от 50 грн.</li>
-            <li>Стрижка под насадку от 200 грн.</li>
-            <li>Детская стрижка (до 12 лет) от 300 грн.</li>
-            <li>Камуфлирование седины от 200 грн.</li>
+            <li class="price-list_item">Мужская стрижка от 300 грн.</li>
+            <li class="price-list_item">Стрижка бороды от 200 грн.</li>
+            <li class="price-list_item">Стрижка усов от 200 грн.</li>
+            <li class="price-list_item">Бритье опасной бритвой от 200 грн.</li>
+            <li class="price-list_item">Cтрижка у стажера от 50 грн.</li>
+            <li class="price-list_item">Стрижка под насадку от 200 грн.</li>
+            <li class="price-list_item">
+              Детская стрижка (до 12 лет) от 300 грн.
+            </li>
+            <li class="price-list_item">Камуфлирование седины от 200 грн.</li>
           </ul>
           <button type="button" class="btn-appointment">Онлайн-запись</button>
         </div>
       </section>
       <!-- Experience -->
       <section>
-        <div class="container">
-          <p>старая традиционная школа</p>
-          <h2>Почему приходят именно к нам?</h2>
-          <p>
-            О нас говорят только хорошее. Но лучше 1 раз увидеть и
-            прочувствовать, чем 10 раз прочитать.
-          </p>
-          <ul class="list">
-            <li>600 Довольных клиентов в день</li>
-            <li>20 Лучших мастеров Киева</li>
-            <li>50 Наград за отличный сервис</li>
-            <li>100 Подарков постоянным клиентам</li>
+        <div class="container experience-container">
+          <div>
+            <p class="subtitle-light">старая традиционная школа</p>
+            <h2 class="title">Почему приходят именно к нам?</h2>
+            <p class="experience-text">
+              О нас говорят только хорошее. Но лучше 1 раз увидеть и
+              прочувствовать, чем 10 раз прочитать.
+            </p>
+          </div>
+          <ul class="list experience-list">
+            <li class="experience-list_item">
+              <span>600</span> Довольных клиентов в день
+            </li>
+            <li class="experience-list_item">
+              <span>20</span> Лучших мастеров Киева
+            </li>
+            <li class="experience-list_item">
+              <span>50</span> Наград за отличный сервис
+            </li>
+            <li class="experience-list_item">
+              <span>100</span> Подарков постоянным клиентам
+            </li>
           </ul>
         </div>
       </section>
       <!-- Masters -->
-      <section>
+      <section class="section-masters">
         <div class="container">
-          <p>для настоящих ценителей атмосферы</p>
-          <h2>Наши мастера</h2>
-          <ul class="list">
+          <p class="subtitle-light">для настоящих ценителей атмосферы</p>
+          <h2 class="title title-light">Наши мастера</h2>
+          <ul class="list masters-list">
             <li>
-              <img src="" alt="" />
+              <img
+                src="./images/masters/john-smith/img1@1x.jpg"
+                alt="John Smith"
+              />
               <h3>John Smith</h3>
               <p>Extreme Barber</p>
               <ul class="list">
@@ -163,7 +178,10 @@
               </ul>
             </li>
             <li>
-              <img src="" alt="" />
+              <img
+                src="./images/masters/michele-doe/img2@1x.png"
+                alt="Michele Doe"
+              />
               <h3>Michele Doe</h3>
               <p>Extreme Barber</p>
               <ul class="list">
@@ -174,7 +192,10 @@
               </ul>
             </li>
             <li>
-              <img src="" alt="" />
+              <img
+                src="./images/masters/alan-black/img3@1x.png"
+                alt="Alan Black"
+              />
               <h3>Alan Black</h3>
               <p>Extreme Barber</p>
               <ul class="list">
@@ -191,12 +212,22 @@
       <section>
         <div class="container">
           <h2 hidden>Galery</h2>
-          <p>На латинском языке “барба” означает “борода”</p>
-          <ul class="list">
-            <li><img src="" alt="" /></li>
-            <li><img src="" alt="" /></li>
-            <li><img src="" alt="" /></li>
-            <li><img src="" alt="" /></li>
+          <p class="subtitle-light">
+            На латинском языке “барба” означает “борода”
+          </p>
+          <ul class="list galery-list">
+            <li class="galery-list_item">
+              <img src="./images/galery/Rectangle 25@1x.jpg" alt="" />
+            </li>
+            <li class="galery-list_item">
+              <img src="./images/galery/Rectangle 26@1x.jpg" alt="" />
+            </li>
+            <li class="galery-list_item">
+              <img src="./images/galery/Rectangle 27@1x.jpg" alt="" />
+            </li>
+            <li class="galery-list_item">
+              <img src="./images/galery/Rectangle 28@1x.jpg" alt="" />
+            </li>
           </ul>
         </div>
       </section>
