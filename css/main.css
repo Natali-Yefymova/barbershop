@@ -134,7 +134,14 @@ text-transform: uppercase;
 }
 /* HERO */
 .section-hero {
-    background-image: url(./images/hero/hero-image@1x.png);
+    background-image: url('../images/hero/hero-image@1x.png');
+    background-size: cover;
+    /* max-width: 1085px;
+    max-height: 650px; */
+    background-color: khaki;
+}
+.hero-container {
+    margin-left: 100px;
 }
 .hero-title {
     font-weight: 700;
@@ -142,6 +149,7 @@ font-size: 72px;
 line-height: 1.18;
 letter-spacing: 0.05em;
 margin-top: 20px;
+color: var(--light-bgd);
 }
 .subtitle-dark {
     font-weight: 600;
@@ -200,6 +208,11 @@ color: rgba(157, 164, 189, 0.6);
 }
 
 /* Price */
+.sect-price {
+    background-image: url('../images/price/img@1x.png');
+    background-size: cover;
+    background-color: #111319;
+}
 .price-list_item{
     letter-spacing: 0.02em;
     color: var(--text-accent);
