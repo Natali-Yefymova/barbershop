@@ -58,8 +58,8 @@ section{
     box-sizing: border-box;
     border-radius: 25px;
     background-color: transparent;
-    display: inline-block;
-    text-align: center;
+    /* display: inline-block;
+    text-align: center; */
 }
 .btn-appointment:hover,
 .btn-appointment:focus {
@@ -78,7 +78,36 @@ section{
 .title-light {
     margin-top: 20px;
     margin-bottom: 44px;
+    color: var(--light-bgd);
 }
+.subtitle {
+font-weight: 600;
+font-size: 11px;
+line-height: 1.4;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+
+}
+.subtitle::before {
+    content: ' ';
+    display: inline-block;
+    vertical-align: super;
+    margin-right: 20px;
+    width: 60px;
+    height: 1px;
+    background-color:  rgba(157, 164, 189, 0.6);
+}
+.subtitle-dark{
+  color: rgba(157, 164, 189, 0.6);
+}
+.subtitle-light {
+    color: var(--dark-bgd);
+  }
+.subtitle-light::before{
+    background-color: var(--dark-bgd);
+}
+
+
 /* header */
 
 .header>.container {
@@ -151,23 +180,7 @@ letter-spacing: 0.05em;
 margin-top: 20px;
 color: var(--light-bgd);
 }
-.subtitle-dark {
-    font-weight: 600;
-font-size: 11px;
-line-height: 1.4;
-letter-spacing: 0.1em;
-text-transform: uppercase;
 
-color: rgba(157, 164, 189, 0.6);
-}
-.subtitle-light {
-    color: var(--dark-bgd);
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 1.36;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-}
 .hero-text {
     font-size: 18px;
     letter-spacing: 0.02em;
@@ -209,18 +222,34 @@ color: rgba(157, 164, 189, 0.6);
 
 /* Price */
 .sect-price {
+    display: block;
     background-image: url('../images/price/img@1x.png');
+    background-repeat: no-repeat;
     background-size: cover;
     background-color: #111319;
 }
+.price-list-wrapper{
+    display: flex;
+margin-bottom: 50px;
+}
+.price-list{
+    width: 50%;
+    padding: 30px 40px;
+    background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+
+}
+.price-list:nth-child(4n-1),
+.price-list:nth-child(4n-2){
+    background: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
+}
 .price-list_item{
+    display: flex;
+    justify-content: space-between;
     letter-spacing: 0.02em;
     color: var(--text-accent);
 }
-.price-container .btn-appointment{
-    display: inline-block;
-    margin-top: 50px;
-    margin-left: auto;
+.btn-appointment.price-btn{
+text-align: end;
 }
 /* Experience */
 .experience-container {
@@ -257,11 +286,17 @@ margin-bottom: 30px;
     max-width: 270px;
     height: 360px;
     }
-    .galery-list_item:not(:last-child){
+.galery-list_item:not(:last-child){
         margin-right: 30px;
     }
 /* FOOTER */
 .footer {
+    display: flex;
+    
     padding: 130px 55px;
     background-color: var(--footer-bgd);
+}
+.footer-social{
+display: flex;
+align-items: center;
 }
