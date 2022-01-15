@@ -39,7 +39,7 @@ section{
     outline: 1px solid red;
 }
 .container {
-    width: 1200px;
+    max-width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin-right: auto;
@@ -249,7 +249,12 @@ margin-bottom: 50px;
     color: var(--text-accent);
 }
 .btn-appointment.price-btn{
-text-align: end;
+ /* display: block;
+ max-width: 160px;
+ height: 40px;
+ padding: 12px 20px;
+ margin-right: auto;
+ margin-left: auto; */
 }
 /* Experience */
 .exp-sect{
@@ -259,6 +264,9 @@ padding-right: 125px;
 .experience-container {
 display: flex;
 margin: 0;
+outline: 2px solid blue;
+padding: 0;
+
 
 
 }
@@ -267,9 +275,13 @@ margin: 0;
     display: flex;
     flex-wrap: wrap;
 }
-.experience-list:not(:nth-last-child(-n+2)){
+/* .experience-list_item:not(:nth-last-child(-n+2)){
 margin-bottom: 30px;
+} */
+.experience-list_item:first-child{
+    margin-top: -9px;
 }
+
 .experience-list_item {
     background-color: var(--grey-bgd);
     font-weight: 600;
@@ -283,6 +295,7 @@ padding: 20px 24px;
 display: flex;
 flex-direction: column;
 color: var(--dark-bgd);
+
 }
 
 .experience-list_item span{
@@ -293,7 +306,17 @@ letter-spacing: 0.05em;
 }
 .experience-list_item:nth-child(odd){
     margin-right: 30px;
+    /* transform: translateY(-9px); */
+ 
+   }
+   .experience-list_item:nth-child(-n+2) {
+    margin-bottom: 30px;
 }
+.experience-list_item:nth-child(2){
+    margin-top: 26px;
+   margin-bottom: 0;  
+}
+
 .experience-text {
     font-size: 18px;
 }
@@ -301,8 +324,53 @@ letter-spacing: 0.05em;
 .section-masters{
     background-color: var(--grey-bgd);
 }
+.masters-title{
+    margin-top: 20px;
+    margin-bottom: 44px;
+}
 .masters-list {
     display: flex;
+    
+}
+.masters-name{
+    text-align: center;
+}
+.masters-level{
+    color: var(--accent-color);
+    margin-top: 8px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.masters-item:not(:last-child){
+    margin-right: 30px;
+}
+.masters-social {
+    display: flex;
+    justify-content: center;
+}
+.masters-social-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.masters-social-item{
+    background-color: var(--light-bgd);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+.masters-social-item:not(:last-child){
+    margin-right: 10px;
+}
+.masters-social-icon{
+    fill: var(--dark-bgd);
+    width: 20px;
+    height: 20px;
+       
+}
+.masters-social-item:hover .masters-social-icon,
+.masters-social-item:focus .masters-social-icon {
+    fill: var(--accent-color);
 }
 /* Galery */
 .galery-list {
@@ -326,4 +394,4 @@ letter-spacing: 0.05em;
 .footer-social{
 display: flex;
 align-items: center;
-}
+}pxpx
