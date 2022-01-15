@@ -382,12 +382,24 @@ letter-spacing: 0.05em;
     }
 /* FOOTER */
 .footer {
-    display: flex;
-    
     padding: 130px 55px;
     background-color: var(--footer-bgd);
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
 }
 .footer-social{
 display: flex;
 align-items: center;
-}pxpx
+}
+.footer-social-item{
+margin-left: 40px;
+}
+.footer-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--light-bgd);
+    padding: 56px 55px;
+}
